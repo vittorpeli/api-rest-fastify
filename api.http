@@ -1,0 +1,17 @@
+POST http://localhost:3333/transactions
+Content-Type: application/json
+
+{
+  "title": "Burger",
+  "amount": 4000,
+  "type": "debit"
+}
+
+###
+GET http://localhost:3333/transactions
+
+###
+GET http://localhost:3333/transactions/d9896d9a-0cb9-462f-80f9-94dc051709ae
+
+###
+GET http://localhost:3333/transactions/summary
